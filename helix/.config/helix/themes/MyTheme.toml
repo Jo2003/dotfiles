@@ -1,0 +1,42 @@
+inherits = "gruvbox"
+"ui.background" = { bg = "mm_background" }
+"ui.text" = { fg = "mm_text" }
+"ui.menu.selected" = { fg = "mm_background", bg = "mm_tag", modifiers = ["bold"] }
+"ui.statusline" = { fg = "mm_text", bg = "mm_statusline_bg" }
+
+"tag" = "mm_tag"
+"string" = "mm_string"
+"string.regexp" = "mm_tag"
+"string.symbol" = "mm_text"
+"type" = "mm_text"
+"type.builtin" = "mm_type"
+"type.enum.variant" = "mm_type"
+"constant.builtin" = "mm_keyword"
+"constant.character.escape" = "mm_tag"
+"constant.numeric" = "mm_number"
+"variable" = "mm_text"
+"variable.builtin" = "mm_type"
+
+"function" = "mm_function"
+"function.builtin" = "mm_text"
+"keyword" = "mm_keyword"
+"namespace" = "mm_text"
+
+"operator" = "mm_text"
+"punctuation" = "mm_text"
+
+[palette]
+mm_background     = "#282923"
+mm_string         = "#e0da74"
+mm_type           = "#67d8ef"
+mm_function       = "#9fe12c"
+mm_keyword        = "#f9246f"
+mm_comment        = "#74705b"
+mm_text           = "#f8f8ee"
+mm_number         = "#ac80ff"
+mm_cursorline     = "#505040"
+act_bufferline_fg = "#770000"
+act_bufferline_bg = "#e6db74"
+mm_tag            = "#FFCC00"
+mm_ui_selection   = "#878b91"
+mm_statusline_bg  = "#4d4f43"

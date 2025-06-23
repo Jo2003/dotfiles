@@ -1,0 +1,22 @@
+theme = "MyTheme"
+
+[editor]
+bufferline = "always"
+cursorline = true
+color-modes = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+# Minimum severity to show a diagnostic on the primary cursor's line.
+# Note that `cursor-line` diagnostics are hidden in insert mode.
+cursor-line = "warning"
+# Minimum severity to show a diagnostic on other lines:
+# other-lines = "warning"
+
+[editor.file-picker]
+hidden = true
+
+[keys.normal]
+tab = ["goto_next_buffer"]
+S-tab = ["goto_previous_buffer"]
+K = ["signature_help"]

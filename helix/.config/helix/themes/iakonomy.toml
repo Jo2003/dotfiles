@@ -1,0 +1,16 @@
+inherits = "gruvbox"
+
+[palette]
+mm_background     = "#282923"
+mm_string         = "#e0da74"
+mm_type           = "#67d8ef"
+mm_function       = "#9fe12c"
+mm_keyword        = "#f9246f"
+mm_comment        = "#74705b"
+mm_text           = "#f8f8ee"
+mm_number         = "#ac80ff"
+mm_cursorline     = "#505040"
+act_bufferline_fg = "#770000"
+act_bufferline_bg = "#e6db74"
+mm_tag            = "#FFCC00"
+mm_ui_selection   = "#878b91"
