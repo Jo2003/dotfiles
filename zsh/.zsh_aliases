@@ -1,0 +1,6 @@
+alias ll='ls -l'
+alias la = 'la -al'
+alias tm='tmux -T RGB'
+alias hx=helix
+alias vi=vim
+
