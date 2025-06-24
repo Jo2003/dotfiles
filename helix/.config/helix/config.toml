@@ -19,4 +19,3 @@ hidden = true
 [keys.normal]
 tab = ["goto_next_buffer"]
 S-tab = ["goto_previous_buffer"]
-K = ["signature_help"]
