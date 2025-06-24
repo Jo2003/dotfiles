@@ -3,4 +3,3 @@ alias l='ls -l'
 alias tm='tmux -T RGB'
 alias hx=helix
 alias vi=vim
-alias yazi=/opt/yazi/yazi
