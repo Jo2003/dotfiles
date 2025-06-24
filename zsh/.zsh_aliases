@@ -1,5 +1,7 @@
 alias l='ls -l'
-# alias ll = 'ls -al'
+alias ll='ls -al'
 alias tm='tmux -T RGB'
 alias hx=helix
 alias vi=vim
+alias fzf='fzf --preview="bat --color=always {}"'
+

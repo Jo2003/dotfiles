@@ -13,5 +13,7 @@ compinit
 [[ -e ~/bin ]] && export PATH=~/bin:$PATH
 [[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
 
+source <(fzf --zsh)
 eval "$(starship init zsh)"
+neofetch --source ~/.config/ascii/tux.txt
 
