@@ -14,6 +14,12 @@ compinit
 [[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
 
 source <(fzf --zsh)
+FETCH_FILE=~/.last_fetch
+NOW=$(date +'%Y-%m-%d')
+LAST=$(cat $FETCH_FILE)
+if [[ $NOW != $LAST ]] ; then
+    neofetch --source ~/.config/ascii/tux.txt
+    echo $NOW > $FETCH_FILE
+fi
 eval "$(starship init zsh)"
-neofetch --source ~/.config/ascii/tux.txt
 
