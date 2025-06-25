@@ -4,4 +4,6 @@ alias tm='tmux -T RGB'
 alias hx=helix
 alias vi=vim
 alias fzf='fzf --preview="bat --color=always {}"'
+alias cat='bat --color=always'
+
 
