@@ -122,9 +122,11 @@
         This is for the module app menu.
         */
         box-shadow: none;
-            text-shadow: none;
+        text-shadow: none;
         padding: 0px;
         border-radius: 5px;
+        border-color: #f8f8ee;
+        border: solid 1px;
         margin-top: 3px;
         margin-bottom: 3px;
         margin-right: 1px;

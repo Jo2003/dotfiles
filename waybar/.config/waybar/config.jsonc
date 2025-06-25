@@ -5,8 +5,7 @@
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["cpu","memory","disk", "network", "pulseaudio", "tray","group/group-power", "clock"],
     "custom/appmenu": {
-        	"format": "Menu {icon}",
-        	"format-icon": "󰻀",
+        	"format": " 󰹯 Menu ",
         	"rotate": 0,
         	"on-click": "~/.config/waybar/ult.sh"
     },
@@ -19,11 +18,10 @@
         	"active-first": false
    	 },
      "hyprland/workspaces": {
-        "format-window-separator": "|",
 		    "format": "{name}: {icon}",
         "format-icons": {
             "urgent": "",
-            "active": "",
+            "active": "<span color='#ffcc00'><b></b></span>",
             "default": ""
         }// ,
 			   // "persistent-workspaces": {
