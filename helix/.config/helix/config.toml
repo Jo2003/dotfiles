@@ -14,7 +14,7 @@ cursor-line = "warning"
 # other-lines = "warning"
 
 [editor.file-picker]
-hidden = true
+hidden = false
 
 [keys.normal]
 tab = ["goto_next_buffer"]
