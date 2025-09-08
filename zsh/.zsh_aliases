@@ -3,7 +3,7 @@ alias ll='ls -al'
 alias tm='tmux -T RGB'
 alias hx=helix
 alias vi=vim
-alias fzf='fzf --preview="bat --color=always {}"'
+alias fzf='fzf --preview="bat --color=always --style=numbers --line-range=:500 {}"'
 alias bat='bat --color=always'
 
 
