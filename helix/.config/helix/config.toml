@@ -4,6 +4,7 @@ theme = "MyTheme"
 bufferline = "always"
 cursorline = true
 color-modes = true
+true-color = true
 end-of-line-diagnostics = "hint"
 # Trim whitespace preceding line endings on write (default false)
 trim-trailing-whitespace = true
@@ -21,6 +22,13 @@ cursor-line = "warning"
 
 [editor.file-picker]
 # hidden = false
+
+[editor.indent-guides]
+character = "╎"
+render = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
 
 [keys.normal]
 tab = ["goto_next_buffer"]
