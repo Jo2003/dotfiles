@@ -11,6 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 [[ -e ~/bin ]] && export PATH=~/bin:$PATH
+[[ -e ~/.opencode/bin ]] && export PATH=~/.opencode/bin:$PATH
 [[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
 [[ -e /opt/python/bin ]] && export PATH=/opt/python/bin:$PATH
 
@@ -19,14 +20,18 @@ batdiff() {
     git diff --name-only --relative --diff-filter=d | xargs bat --diff
 }
 
-eval "$(starship init zsh)"
-sleep 1
-FETCH_FILE=~/.last_fetch
-NOW=$(date +'%Y-%m-%d')
-LAST=$(cat $FETCH_FILE)
-if [[ $NOW != $LAST ]] ; then
-    neofetch --source ~/.config/ascii/tux.txt
-    echo $NOW > $FETCH_FILE
-fi
+neo() {
+    sleep 1
+    FETCH_FILE=~/.last_fetch
+    NOW=$(date +'%Y-%m-%d')
+    LAST=$(cat $FETCH_FILE)
+    if [[ $NOW != $LAST ]] ; then
+        neofetch --source ~/.config/ascii/tux.txt
+        echo $NOW > $FETCH_FILE
+    fi
+}
 
+eval "$(starship init zsh)"
+
+neo
 

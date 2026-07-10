@@ -11,7 +11,8 @@ trim-trailing-whitespace = true
 # Trim extra line endings after the final one on write (default false)
 trim-final-newlines = true
 rulers = [120]
-completion-replace = true
+completion-replace = false
+completion-timeout = 500
 
 [editor.inline-diagnostics]
 # Minimum severity to show a diagnostic on the primary cursor's line.
